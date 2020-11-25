@@ -43,3 +43,23 @@ for i in range(len(nums)):
 #fill the rest of the list with zeroes
 for i in range(j, len(nums)):
     nums[i] = 0
+
+
+
+******
+SOL 4
+******
+nums = [0,1,0,0,3,0,0,12]	
+
+j = 0
+
+#bring all the non-zero values at the beggining of the list, respecting their order
+for i in range(len(nums)):
+    if nums[i] != 0:
+    	if j != i:
+	        nums[j] = nums[i]      
+        j += 1 
+        
+#fill the rest of the list with zeroes
+for i in range(j, len(nums)):
+    nums[i] = 0
