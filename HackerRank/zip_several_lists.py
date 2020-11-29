@@ -14,5 +14,6 @@ grades = []
 for _ in range(x):
   grades.append(list(map(float, input().rstrip().split())))
 
+# the * operator can be used to unpack an iterable into the arguments in the function call
 for lista in zip(*grades):
   print(sum(lista)/len(lista))
